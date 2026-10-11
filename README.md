@@ -1,5 +1,14 @@
 # Fraud Detection using Graph Neural Networks and Temporal Machine Learning
 
+## 🌐 Live Demo & Repository
+
+- **Live Streamlit Dashboard:** [https://kt2dyxfngpuzaxhygwffg4.streamlit.app/](https://kt2dyxfngpuzaxhygwffg4.streamlit.app/)
+- **GitHub Repository:** [https://github.com/Kaviprakash24/-fraud-detection-gnn-temporal-ml](https://github.com/Kaviprakash24/-fraud-detection-gnn-temporal-ml)
+
+> 🚀 **Explore the Live App:** Test real-time transaction scoring via the **Live Fraud Checker**, simulate decision thresholds and financial trade-offs on the **Threshold Simulator**, inspect high-risk transactions, and explore the 4-model audited benchmark results directly in your browser.
+
+---
+
 A rigorous research and engineering benchmark investigating whether **dynamic Graph Neural Networks (GNNs)** outperform traditional **tabular machine learning** and **neural baselines** on large-scale financial transaction networks under strict **temporal causality** and **anti-leakage guarantees**.
 
 Evaluated on the **PaySim financial transaction ledger** (6,362,620 transactions, 9,073,900 accounts) across four isolated model architectures on an untouched chronological holdout test set (103,573 transactions).
