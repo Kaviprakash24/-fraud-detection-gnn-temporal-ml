@@ -1,0 +1,90 @@
+{
+    "model_name": "GraphOnlySAGE (Graph-Only Ablation)",
+    "description": "Graph-Only SAGE classifier using strictly 4 structural node features on causal subgraphs, excluding all transaction edge features.",
+    "best_epoch": 2,
+    "early_stopped_epoch": 3,
+    "early_stopping_rationale": "Stopped early with approval after Epoch 3 because validation PR-AUC plateaued at ~0.0078 near validation fraud prevalence (0.005756), confirming zero standalone predictive power of structural features without tabular edge features.",
+    "selected_threshold": 0.5,
+    "node_features": [
+        "log1p(historical_received_transaction_count)",
+        "log1p(historical_sent_transaction_count)",
+        "log1p(historical_total_transaction_count)",
+        "log1p(historical_unique_neighbors)"
+    ],
+    "edge_features": [],
+    "node_feature_dim": 4,
+    "edge_feature_dim": 0,
+    "trainable_parameters": 19201,
+    "test_metrics": {
+        "precision": 0.022051170858629662,
+        "recall": 0.635625,
+        "f1": 0.042623637887678124,
+        "roc_auc": 0.609849914315554,
+        "pr_auc": 0.0208008834714008,
+        "best_threshold": 0.5,
+        "confusion_matrix": [
+            [
+                56870,
+                45103
+            ],
+            [
+                583,
+                1017
+            ]
+        ],
+        "val_pr_auc": 0.0077003261717873885,
+        "val_roc_auc": 0.6030580571701549,
+        "val_f1": 0.01588167545614354,
+        "val_fraud_prevalence": 0.005755815012477004,
+        "test_fraud_prevalence": 0.015448041477991368,
+        "early_stopping_epoch": 3,
+        "best_checkpoint_epoch": 2
+    },
+    "val_threshold_grid": {
+        "0.1": {
+            "f1": 0.011445750402955611,
+            "precision": 0.005755815012477004,
+            "recall": 1.0
+        },
+        "0.2": {
+            "f1": 0.011445750402955611,
+            "precision": 0.005755815012477004,
+            "recall": 1.0
+        },
+        "0.3": {
+            "f1": 0.013715382172705714,
+            "precision": 0.006916760366622372,
+            "recall": 0.803006329113924
+        },
+        "0.4": {
+            "f1": 0.015095850817474275,
+            "precision": 0.007631907888945617,
+            "recall": 0.6859177215189873
+        },
+        "0.5": {
+            "f1": 0.01588167545614354,
+            "precision": 0.008043553899997953,
+            "recall": 0.6218354430379747
+        },
+        "0.6": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0
+        },
+        "0.7": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0
+        },
+        "0.8": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0
+        },
+        "0.9": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0
+        }
+    }
+}

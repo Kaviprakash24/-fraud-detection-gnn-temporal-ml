@@ -1,0 +1,27 @@
+# ==============================================================================
+# Fraud Detection using GNN + Temporal ML - Requirements
+# Verified against local Python 3.13 / PyTorch 2.14 environment
+# ==============================================================================
+
+# Core Scientific & Data Processing
+numpy>=2.0.0
+pandas>=2.2.0
+scipy>=1.14.0
+scikit-learn>=1.5.0
+joblib>=1.4.0
+
+# Machine Learning Baseline
+xgboost>=2.1.0
+
+# Graph Neural Networks & Deep Learning
+torch>=2.14.0
+torch_geometric>=2.8.0
+
+# Interactive Dashboard & Plotting
+streamlit>=1.40.0
+plotly>=5.24.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# Unit Testing & Validation
+pytest>=8.0.0

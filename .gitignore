@@ -1,0 +1,69 @@
+# ==============================================================================
+# Git Ignore - Fraud Detection using GNN + Temporal ML
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and runtime
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.log
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Large Raw and Processed Datasets (>100MB exceeds GitHub hard limit)
+data/raw/
+!data/raw/.gitkeep
+data/processed/*.csv
+data/processed/graph/paysim_graph.pt
+data/processed/graph/node_mapping.json
+
+# Scratch & Temporary outputs
+scratch/
+*.tmp
+
+# Redundant / development model checkpoints (audited checkpoints remain tracked)
+models/edge_only_mlp_latest.pt
+models/graph_only_latest.pt
+models/graphsage_small_subset.pt
+
+# Archived experimental scratch scripts
+scripts/archive/
+
+# Temporary profiling, benchmarking, and debugging scripts (kept locally)
+scripts/benchmark_dataloader.py
+scripts/benchmark_sampler.py
+scripts/profile_sampler.py
+scripts/test_one_batch.py
+scripts/run_graphsage_smoke_test.py
+scripts/diagnostic_graphsage.py
+scripts/audit_features.py
+scripts/train_small_subset.py
+scripts/ablation_experiment.py

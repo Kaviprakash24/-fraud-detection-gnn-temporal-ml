@@ -1,0 +1,26 @@
+{
+    "num_nodes": 9073900,
+    "num_edges": 6362620,
+    "edge_features": [
+        "amount",
+        "type_is_PAYMENT",
+        "type_is_TRANSFER",
+        "type_is_CASH_OUT",
+        "type_is_DEBIT",
+        "type_is_CASH_IN",
+        "sender_hist_tx_count",
+        "sender_hist_amt_sum",
+        "sender_hist_amt_avg",
+        "sender_hist_amt_max",
+        "sender_amt_dev_from_avg",
+        "sender_time_since_last_tx",
+        "receiver_hist_tx_count",
+        "receiver_hist_amt_sum",
+        "receiver_hist_amt_avg",
+        "receiver_hist_amt_max",
+        "receiver_time_since_last_tx"
+    ],
+    "node_features": [
+        "placeholder_ones"
+    ]
+}

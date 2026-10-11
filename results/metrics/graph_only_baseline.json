@@ -1,0 +1,25 @@
+{
+    "precision": 0.022051170858629662,
+    "recall": 0.635625,
+    "f1": 0.042623637887678124,
+    "roc_auc": 0.609849914315554,
+    "pr_auc": 0.0208008834714008,
+    "best_threshold": 0.5,
+    "confusion_matrix": [
+        [
+            56870,
+            45103
+        ],
+        [
+            583,
+            1017
+        ]
+    ],
+    "val_pr_auc": 0.0077003261717873885,
+    "val_roc_auc": 0.6030580571701549,
+    "val_f1": 0.01588167545614354,
+    "val_fraud_prevalence": 0.005755815012477004,
+    "test_fraud_prevalence": 0.015448041477991368,
+    "early_stopping_epoch": 3,
+    "best_checkpoint_epoch": 2
+}
